@@ -1,4 +1,4 @@
-function drawPool(p, pool) { 
+function drawPool(p, pool, poolRecords) { 
     // create new pool div
     var newDiv = $("<div></div>").addClass("Pool");
     newDiv.attr("id", p);
@@ -14,7 +14,6 @@ function drawPool(p, pool) {
     toprow.append($("<td>Team</td><td>Wins</td><td>Losses</td><td>Ties</td>"));
     newTable.append($(toprow));
 
-
     // sort the teams based on seed
     Object.keys(pool).sort(function(a, b) { return pool[a] > pool[b]; });
 
@@ -22,9 +21,13 @@ function drawPool(p, pool) {
     for(var r in pool){
         var row = $("<tr />");
         $(newTable).append(row);
-        row.append($("<td>" + pool[r] + ' (' + r + ')' + "</td>"));
+        row.append($("<td>" + pool[r] + ' (' + r + ')' + "</td>")); // name
+        // .Wins .Losses .Ties
+        row.append($("<td>" + poolRecords[r].Wins + "</td>")); // wins 
+        row.append($("<td>" + poolRecords[r].Losses + "</td>")); // losses
+        row.append($("<td>" + poolRecords[r].Ties + "</td>")); // ties
+        
     }
-
     // add the new table to document
     newDiv.append(newTable);
 }
@@ -44,12 +47,9 @@ function drawPoolPlay(p, games, pools) {
     toprow.append($("<td>Date</td><td>Time</td><td>Field</td><td>Team 1</td><td>Team 2</td><td>Score</td>"));
     newTable.append($(toprow));
     
-    console.log(pools);
-    
     for(var r in games){
-        
         var row = $("<tr />");
-        $(newTable).append(row);
+        $(newTable).append(row);{}
         // format datetime
         row.append($("<td>" + games[r].Datetime.substring(5,10) +"</td>")); // date
         row.append($("<td>" + games[r].Datetime.substring(11,16) +"</td>")); // time
@@ -57,25 +57,32 @@ function drawPoolPlay(p, games, pools) {
         row.append($("<td>" + pools[p][games[r].Team1] + "</td>")); // team 1
         row.append($("<td>" + pools[p][games[r].Team2] +"</td>")); // team 2
         row.append($("<td>" + games[r].Team1Score + ' - ' + games[r].Team2Score +"</td>")); // score
-        
     }
-    
-    
     newDiv.append(newTable);
-
 }
 
-
-
 $(document).ready(function() {
-    var pools = [];
+    // do this automatically
+    var poolRecords = [{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0}];
+    
     $.getJSON('chowdafest.json', function(data) {
         $.each(data.PoolPlay, function(key, value){
-
+            for(g in value){
+                // cast as int?
+                if(value[g].Team1Score < value[g].Team2Score){
+                    poolRecords[value[g].Team1].Wins += 1;
+                    poolRecords[value[g].Team2].Losses += 1;
+                }
+                else if (value[g].Team1Score > value[g].Team2Score){
+                    poolRecords[value[g].Team2].Wins += 1;
+                    poolRecords[value[g].Team1].Losses += 1;
+                }
+            }
+            console.log(poolRecords);
             drawPoolPlay(key, value, data.Pools);
         });
         $.each(data.Pools, function(key, value) {
-            drawPool(key, value);
+            drawPool(key, value, poolRecords);
         });
     });
 });
