@@ -1,3 +1,15 @@
+*{
+    padding:0px;
+	margin:0px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration:none;
+	-webkit-font-smoothing: antialiased;
+	 line-height: 1.5em;
+}
+body {
+    background-image: url("b10.png");
+    
+}
 #Pools{
     overflow: hidden;
     margin-bottom: 40px;
@@ -6,24 +18,38 @@
 .Pool{
     display: inline-block;
     margin: 10px;
-    
+    border-left: thick solid royalblue;
+    border-right: thick solid rgb(18, 18, 18);
+    background: rgb(18, 18, 18); 
+    padding:3px 10px; 
+    -webkit-border-radius:3px; 
+    margin:10px 3px;
 }
 #PoolPlay{
     overflow: hidden;
-    text-align: center;
-    width: 100%;
-    float: left;   
-    
+    margin-bottom: 40px;
+    text-align: center; 
 }
 .PoolPlay{
-    display: inline;
+    display: inline-block;
+    margin: 10px;
+    border-left: thick solid royalblue;
+    border-right: thick solid rgb(18, 18, 18);
+    background: rgb(18, 18, 18); 
+    padding:3px 10px; 
+    -webkit-border-radius:3px; 
+    margin:10px 3px;
+    
 }
 table {
+    color: white;
     margin: 0px auto;
     text-align: left;
     margin-bottom: 10px;
 }
 h2 {
+    color: royalblue;
     margin: 0px auto;
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
 }
