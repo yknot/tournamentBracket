@@ -3,9 +3,11 @@ function drawPool(p, pool) {
     var newDiv = $("<div></div>").addClass("Pool");
     newDiv.attr("id", p);
     $("#Pools").append(newDiv);
+    var header = $("<h2>Pool " + p + "</h2>");
+    newDiv.append(header);
 
     // create pool in new div
-    var newTable = $("<table></table>").addClass(p);
+    var newTable = $("<table></table>");
 
     // add title row
     var toprow = $("<tr />");
@@ -31,9 +33,11 @@ function drawPoolPlay(p, games, pools) {
     var newDiv = $("<div></div>").addClass("PoolPlay");
     newDiv.attr("id", p);
     $("#PoolPlay").append(newDiv);
+    var header = $("<h2>Pool " + p + "</h2>");
+    newDiv.append(header);
     
      // create pool in new div
-    var newTable = $("<table></table>").addClass(p);
+    var newTable = $("<table></table>");
 
     // add title row
     var toprow = $("<tr />");

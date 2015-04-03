@@ -1,13 +1,29 @@
 #Pools{
-
+    overflow: hidden;
+    margin-bottom: 40px;
+    text-align: center;
 }
 .Pool{
+    display: inline-block;
+    margin: 10px;
     
 }
-table {
-    float: left;
-    margin-right: 40px;
+#PoolPlay{
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    float: left;   
+    
 }
-tr {
-       
+.PoolPlay{
+    display: inline;
+}
+table {
+    margin: 0px auto;
+    text-align: left;
+    margin-bottom: 10px;
+}
+h2 {
+    margin: 0px auto;
+    text-align: center;
 }
