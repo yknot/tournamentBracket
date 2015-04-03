@@ -1,0 +1,269 @@
+{
+    "Tournament Info": {
+        "Location": "Rhode Island"
+    },
+    "Pools": {
+        "A": {
+            "1": "7 Express",
+            "4": "Destructors",
+            "5": "Darkwing",
+            "8": "RUT",
+            "9": "Golden Domes",
+            "12": "Drunk in Space"
+        },
+        "B": {
+            "2": "Ursidae",
+            "3": "Pleasuretown",
+            "6": "Mixed Nuts",
+            "7": "Enough Monkeys",
+            "10": "Providence Mob",
+            "11": "Chowdaheads"
+        }
+    },
+    "PoolPlay": {
+        "A": [
+            {
+                "Datetime": "2014-08-23T08:45:00",
+                "Field": "1: Road",
+                "Team1": 1,
+                "Team1Score": "15",
+                "Team2": 12,
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T08:45:00",
+                "Field": "2: Middle",
+                "Team1": 4,
+                "Team1Score": "13",
+                "Team2": 5,
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T08:45:00",
+                "Field": "3: Tree",
+                "Team1": 8,
+                "Team1Score": "14",
+                "Team2": 9,
+                "Team2Score": "4"
+            },
+            {
+                "Datetime": "2014-08-23T10:25:00",
+                "Field": "2: Middle",
+                "Team1": 5,
+                "Team1Score": "13",
+                "Team2": 12,
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T10:25:00",
+                "Field": "1: Road",
+                "Team1": 1,
+                "Team1Score": "13",
+                "Team2": 4,
+                "Team2Score": "7"
+            },
+            {
+                "Datetime": "2014-08-23T1212:05:00",
+                "Field": "1: Road",
+                "Team1": 1,
+                "Team1Score": "13",
+                "Team2": 8,
+                "Team2Score": "7"
+            },
+            {
+                "Datetime": "2014-08-23T1212:05:00",
+                "Field": "2: Middle",
+                "Team1": 4,
+                "Team1Score": "11",
+                "Team2": 12,
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T1212:05:00",
+                "Field": "3: Tree",
+                "Team1": 5,
+                "Team1Score": "10",
+                "Team2": 9,
+                "Team2Score": "5"
+            },
+            {
+                "Datetime": "2014-08-23T12:45:00",
+                "Field": "1: Road",
+                "Team1": 1,
+                "Team1Score": "15",
+                "Team2": 9,
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T12:45:00",
+                "Field": "2: Middle",
+                "Team1": 4,
+                "Team1Score": "14",
+                "Team2": 8,
+                "Team2Score": "10"
+            },
+            {
+                "Datetime": "2014-08-23T12:25:00",
+                "Field": "1: Road",
+                "Team1": 1,
+                "Team1Score": "13",
+                "Team2": 5,
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T12:25:00",
+                "Field": "2: Middle",
+                "Team1": 4,
+                "Team1Score": "14",
+                "Team2": 9,
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T12:25:00",
+                "Field": "3: Tree",
+                "Team1": 8,
+                "Team1Score": "13",
+                "Team2": 12,
+                "Team2Score": "10"
+            },
+            {
+                "Datetime": "2014-08-24T08:45:00",
+                "Field": "1: Road",
+                "Team1": 5,
+                "Team1Score": "14",
+                "Team2": 8,
+                "Team2Score": "4"
+            },
+            {
+                "Datetime": "2014-08-24T08:45:00",
+                "Field": "2: Middle",
+                "Team1": 9,
+                "Team1Score": "10",
+                "Team2": 12,
+                "Team2Score": "12"
+            }
+        ],
+        "B": [
+            {
+                "Datetime": "2014-08-23T08:45",
+                "Field": "5: Fence",
+                "Team1": 2,
+                "Team2": 10,
+                "Team1Score": "15",
+                "Team2Score": "3"
+            },
+            {
+                "Datetime": "2014-08-23T08:45",
+                "Field": "4: Berm",
+                "Team1": 3,
+                "Team2": 11,
+                "Team1Score": "15",
+                "Team2Score": "5"
+            },
+            {
+                "Datetime": "2014-08-23T08:45",
+                "Field": "4: Berm",
+                "Team1": 3,
+                "Team2": 10,
+                "Team1Score": "15",
+                "Team2Score": "4"
+            },
+            {
+                "Datetime": "2014-08-23T10:25",
+                "Field": "3: Tree",
+                "Team1": 6,
+                "Team2": 7,
+                "Team1Score": "7",
+                "Team2Score": "13"
+            },
+            {
+                "Datetime": "2014-08-23T10:25",
+                "Field": "5: Fence",
+                "Team1": 2,
+                "Team2": 11,
+                "Team1Score": "15",
+                "Team2Score": "14"
+            },
+            {
+                "Datetime": "2014-08-23T12:05",
+                "Field": "5: Fence",
+                "Team1": 6,
+                "Team2": 11,
+                "Team1Score": "14",
+                "Team2Score": "9"
+            },
+            {
+                "Datetime": "2014-08-23T12:05",
+                "Field": "4: Berm",
+                "Team1": 7,
+                "Team2": 10,
+                "Team1Score": "15",
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-23T13:45",
+                "Field": "3: Tree",
+                "Team1": 7,
+                "Team2": 11,
+                "Team1Score": "15",
+                "Team2Score": "7"
+            },
+            {
+                "Datetime": "2014-08-23T13:45",
+                "Field": "5: Fence",
+                "Team1": 2,
+                "Team2": 3,
+                "Team1Score": "8",
+                "Team2Score": "13"
+            },
+            {
+                "Datetime": "2014-08-23T13:45",
+                "Field": "4: Berm",
+                "Team1": 6,
+                "Team2": 10,
+                "Team1Score": "12",
+                "Team2Score": "7"
+            },
+            {
+                "Datetime": "2014-08-23T15:25",
+                "Field": "5: Fence",
+                "Team1": 2,
+                "Team2": 7,
+                "Team1Score": "11",
+                "Team2Score": "15"
+            },
+            {
+                "Datetime": "2014-08-23T15:25",
+                "Field": "4: Berm",
+                "Team1": 3,
+                "Team2": 6,
+                "Team1Score": "12",
+                "Team2Score": "8"
+            },
+            {
+                "Datetime": "2014-08-24T08:45",
+                "Field": "5: Fence",
+                "Team1": 2,
+                "Team2": 6,
+                "Team1Score": "11",
+                "Team2Score": "12"
+            },
+            {
+                "Datetime": "2014-08-24T08:45",
+                "Field": "4: Berm",
+                "Team1": 3,
+                "Team2": 7,
+                "Team1Score": "15",
+                "Team2Score": "6"
+            },
+            {
+                "Datetime": "2014-08-24T08:45",
+                "Field": "3: Tree",
+                "Team1": 10,
+                "Team2": 11,
+                "Team1Score": "9",
+                "Team2Score": "15"
+            }
+        ]
+    }
+}
