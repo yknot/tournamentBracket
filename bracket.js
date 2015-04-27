@@ -1,3 +1,6 @@
+/*jslint indent: 4 */
+/*global $, document*/
+
 function drawPool(p, pool, poolRecords) { 
     // create new pool div
     var newDiv = $("<div></div>").addClass("Pool");
@@ -65,9 +68,11 @@ $(document).ready(function() {
     // do this automatically
     var poolRecords = [{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0},{"Wins":0, "Losses":0, "Ties":0}];
     
+    // get the json file
     $.getJSON('chowdafest.json', function(data) {
+        // for each item in PoolPlay (each game)
         $.each(data.PoolPlay, function(key, value){
-            for(g in value){
+            for(var g in value){
                 // cast as int?
                 if(value[g].Team1Score < value[g].Team2Score){
                     poolRecords[value[g].Team1].Wins += 1;
